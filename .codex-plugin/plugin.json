@@ -1,0 +1,41 @@
+{
+  "name": "mint",
+  "version": "0.1.0",
+  "description": "Mint MCP plugin with skills for creating and inspecting Mint 3D worlds and models.",
+  "author": {
+    "name": "Mint",
+    "url": "https://mint.gg"
+  },
+  "homepage": "https://mcp.mint.gg",
+  "repository": "https://github.com/mintdotgg/mint-agent-skills",
+  "license": "Proprietary",
+  "keywords": [
+    "mint",
+    "3d",
+    "mcp",
+    "generation",
+    "models",
+    "worlds"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Mint",
+    "shortDescription": "Create and inspect Mint 3D worlds and models.",
+    "longDescription": "Use Mint MCP to start world and model generation, upload reference images, approve previews, inspect assets, and open runs in Mint chat.",
+    "developerName": "Mint",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Interactive"
+    ],
+    "websiteURL": "https://mint.gg",
+    "defaultPrompt": [
+      "Create a 3D model in Mint.",
+      "Check my Mint credits.",
+      "Show me my latest Mint assets."
+    ],
+    "brandColor": "#0D9488"
+  }
+}

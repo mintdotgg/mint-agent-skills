@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "gg.mint.mcp/mcp",
+  "title": "Mint MCP Server",
+  "description": "The Mint MCP server lets agents create, inspect, revise, and approve Mint 3D worlds and models.",
+  "websiteUrl": "https://mcp.mint.gg",
+  "repository": {
+    "url": "https://github.com/mintdotgg/mint-agent-skills",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.mint.gg/mcp"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "mint",
+  "displayName": "Mint",
+  "version": "0.1.0",
+  "description": "Plugin that includes the Mint MCP server and skills for Mint 3D creation and asset workflows.",
+  "icon": "https://mcp.mint.gg/brand/mint_icon_mint.png",
+  "author": {
+    "name": "Mint"
+  },
+  "homepage": "https://mcp.mint.gg",
+  "repository": "https://github.com/mintdotgg/mint-agent-skills",
+  "keywords": [
+    "mint",
+    "3d",
+    "mcp",
+    "generation",
+    "models",
+    "worlds"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

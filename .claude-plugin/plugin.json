@@ -1,0 +1,8 @@
+{
+  "name": "mint",
+  "description": "Plugin that includes the Mint MCP server and skills for Mint 3D creation and asset workflows.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Mint"
+  }
+}
