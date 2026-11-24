@@ -1,6 +1,6 @@
 {
   "name": "@mintgg/setup",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Install Mint agent skills and the Mint MCP server in your project",
   "bin": {
     "mint-setup": "./bin/mint-setup.mjs"

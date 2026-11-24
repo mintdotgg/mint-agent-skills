@@ -93,25 +93,29 @@ host compatibility manifests and `.mcp.json`.
 
 ## Install in your project
 
-From your project root, run the command for your client once the installer is
-published to the npm registry:
+From your project root, run setup once the installer is published to the npm
+registry. The first command sets up Codex, Claude Code, and Cursor; the others
+set up one client:
 
 ```sh
 npx @mintgg/setup
-npx @mintgg/setup --agent cursor
+npx @mintgg/setup --agent codex
 npx @mintgg/setup --agent claude-code
+npx @mintgg/setup --agent cursor
 ```
 
 You can also run the versioned package from GitHub Releases:
 
 ```sh
-npx https://github.com/mintdotgg/mint-agent-skills/releases/download/v0.1.1/mintgg-setup-0.1.1.tgz
+npx https://github.com/mintdotgg/mint-agent-skills/releases/download/v0.2.0/mintgg-setup-0.2.0.tgz
 ```
 
-Append `--agent cursor` or `--agent claude-code` to target either client.
-
-Setup targets Codex by default. Each command installs both skills and adds
-the production `mint` MCP server to your client's project configuration.
+Without `--agent`, setup configures Codex, Claude Code, and Cursor together.
+Add `--agent codex`, `--agent claude-code`, or `--agent cursor` (repeat or
+comma-separate for several) to target specific clients. Setup installs
+mint-generate and mint-read, installs Mint Three.js Skills through the pinned
+Skills CLI, and adds the production `mint` MCP server to each client's project
+configuration. Add `--skip-threejs` to skip Mint Three.js Skills.
 You can rerun setup safely. If a Mint skill or server entry conflicts with the
 bundled version, setup stops and tells you which file to review.
 
@@ -128,7 +132,7 @@ To test the installer before publishing, run `pnpm pack` in this package
 directory and then run the packed installer from a test project:
 
 ```sh
-npx --package=/absolute/path/to/mintgg-setup-0.1.1.tgz -- mint-setup
+npx --package=/absolute/path/to/mintgg-setup-0.2.0.tgz -- mint-setup
 ```
 
 ## MCP Server
