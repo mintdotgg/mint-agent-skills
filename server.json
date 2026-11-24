@@ -1,14 +1,17 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "gg.mint.mcp/mcp",
   "title": "Mint MCP Server",
-  "description": "The Mint MCP server lets agents create, inspect, revise, and approve Mint 3D worlds and models.",
+  "description": "Generate 3D models, worlds, PBR materials, and coordinated asset packs from AI agents.",
   "websiteUrl": "https://mcp.mint.gg",
-  "repository": {
-    "url": "https://github.com/mintdotgg/mint-agent-skills",
-    "source": "github"
-  },
   "version": "0.1.0",
+  "icons": [
+    {
+      "src": "https://mcp.mint.gg/brand/mint_icon_mint.png",
+      "mimeType": "image/png",
+      "sizes": ["600x600"]
+    }
+  ],
   "remotes": [
     {
       "type": "streamable-http",

@@ -2,7 +2,7 @@
   "name": "mint",
   "displayName": "Mint",
   "version": "0.1.0",
-  "description": "Plugin that includes the Mint MCP server and skills for Mint 3D creation and asset workflows.",
+  "description": "Plugin that includes the Mint MCP server and skills for Mint 3D, material, asset-pack, and audio workflows.",
   "icon": "https://mcp.mint.gg/brand/mint_icon_mint.png",
   "author": {
     "name": "Mint"
@@ -15,7 +15,8 @@
     "mcp",
     "generation",
     "models",
-    "worlds"
+    "worlds",
+    "audio"
   ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json"

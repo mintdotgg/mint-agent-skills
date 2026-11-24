@@ -1,7 +1,7 @@
 {
   "name": "mint",
-  "version": "0.1.0",
-  "description": "Mint MCP plugin with skills for creating and inspecting Mint 3D worlds and models.",
+  "version": "0.1.3",
+  "description": "Create and view 3D models, worlds, asset packs, materials, images, video, and audio through Mint MCP.",
   "author": {
     "name": "Mint",
     "url": "https://mint.gg"
@@ -15,27 +15,36 @@
     "mcp",
     "generation",
     "models",
-    "worlds"
+    "worlds",
+    "audio"
   ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Mint",
-    "shortDescription": "Create and inspect Mint 3D worlds and models.",
-    "longDescription": "Use Mint MCP to start world and model generation, upload reference images, approve previews, inspect assets, and open runs in Mint chat.",
+    "shortDescription": "Create and view 3D assets",
+    "longDescription": "Mint helps game developers, 3D artists, and creators generate and view digital assets from chat. Create 3D models, worlds, asset packs, and materials from text or reference images. You can also create images, video, and audio. Open GLB models and Gaussian splat PLY files in interactive 3D viewers. Browse your Mint library and community creations, preview assets in chat, and download available files. A Mint account is required. Mint MCP does not support exact mesh editing or publication to external marketplaces.",
     "developerName": "Mint",
-    "category": "Productivity",
+    "category": "Creativity",
     "capabilities": [
-      "Read",
-      "Write",
-      "Interactive"
+      "Browse library",
+      "Create assets",
+      "Read assets",
+      "Download artifacts",
+      "Check credits"
     ],
     "websiteURL": "https://mint.gg",
+    "supportURL": "https://docs.mint.gg/support",
+    "privacyPolicyURL": "https://docs.mint.gg/privacy",
+    "termsOfServiceURL": "https://docs.mint.gg/terms-of-service",
     "defaultPrompt": [
       "Create a 3D model in Mint.",
       "Check my Mint credits.",
       "Show me my latest Mint assets."
     ],
-    "brandColor": "#0D9488"
+    "brandColor": "#0D9488",
+    "composerIcon": "./assets/mint_icon_mint.png",
+    "composerIconDark": "./assets/mint_icon_mint.png",
+    "logo": "./assets/mint_icon_mint.png"
   }
 }

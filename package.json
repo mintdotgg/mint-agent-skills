@@ -1,6 +1,6 @@
 {
   "name": "@mintgg/setup",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Install Mint agent skills and the Mint MCP server in your project",
   "bin": {
     "mint-setup": "./bin/mint-setup.mjs"
@@ -12,7 +12,11 @@
     ".claude-plugin/",
     ".codex-plugin/",
     ".cursor-plugin/",
-    "server.json"
+    "server.json",
+    "assets/",
+    "CHANGELOG.md",
+    "mcp.json",
+    "plugin.json"
   ],
   "engines": {
     "node": ">=20"
@@ -22,7 +26,14 @@
   },
   "homepage": "https://mcp.mint.gg",
   "repository": "github:mintdotgg/mint-agent-skills",
-  "keywords": ["mint", "agent-skills", "mcp", "codex", "cursor", "claude-code"],
+  "keywords": [
+    "mint",
+    "agent-skills",
+    "mcp",
+    "codex",
+    "cursor",
+    "claude-code"
+  ],
   "publishConfig": {
     "access": "public"
   }
